@@ -18,6 +18,7 @@ print(a ** (1/2))
 
 # and 
 # or 
+# <, >, >=, <=, !=, not, ==
 
 '''
 comentario de varias lineas
