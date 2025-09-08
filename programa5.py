@@ -6,8 +6,8 @@ cuantos elemtos numericos y cuantos carateres hay en cada estructura
 
 # declarar los arreglos y la lista
 # declare the arrays and the list
-num = [0,0,0,0,0,0,0,0,0,0]  # arreglo fijo de 10 posiciones para números (inicializado con ceros)
-                              # fixed array of 10 positions for numbers (initialized with zeros)
+# num = [0,0,0,0,0,0,0,0,0,0] # arreglo fijo de 10 posiciones para números (inicializado con ceros)
+num = [0]*10                  # fixed array of 10 positions for numbers (initialized with zeros)
 pos = 0                       # posición actual en el arreglo 'num' (cuántos números llevamos guardados)
                               # current position in the 'num' array (how many numbers we have stored)
 cract = []                    # lista para almacenar caracteres o cadenas de texto
@@ -50,5 +50,7 @@ while(n < 10):
 # display final results
 print(f"cantidad de numeros: {pos}")  # total de números válidos guardados
                                       # total valid numbers stored
+# print(f"Numeros ingresados: {num[:pos]}")
 print(f"cantidad de caracteres: {len(cract)}") # total de cadenas de texto (solo letras) ingresadas
                                                # total text strings (only letters) entered
+# print(f"String ingresados: {cract}")
