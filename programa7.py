@@ -47,10 +47,10 @@ def main():
                     # registros.pop # borra toda la lista / deletes the entire list
                 else: 
                     print("Sexo no valido")
-
-            print("Edad no valida")
-
-        print("Nombre no valido")
+            else:
+                print("Edad no valida")
+        else:
+            print("Nombre no valido")
 
     # Mostrar todos los registros al final
     # Display all records at the end

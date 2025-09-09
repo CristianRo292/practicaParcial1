@@ -1,6 +1,7 @@
 # Función para verificar si una cadena contiene todas las vocales
 # Function to check if a string contains all vowels
 def vocales(cad):
+    cad = cad
     # Bandera para cada vocal (inicialmente falsas)
     # Flag for each vowel (initially false)
     ba = False
@@ -11,15 +12,15 @@ def vocales(cad):
 
     # Verificar presencia de cada vocal (mayúscula o minúscula)
     # Check presence of each vowel (uppercase or lowercase)
-    if "a" in cad or "A" in cad:
+    if ("a" in cad) or ("A" in cad):
         ba = True
-    if "e" in cad or "E" in cad:
+    if ("e" in cad) or ("E" in cad):
         be = True
-    if "i" in cad or "I" in cad:
+    if ("i" in cad) or ("I" in cad):
         bi = True
-    if "o" in cad or "O" in cad:
+    if ("o" in cad) or ("O" in cad):
         bo = True
-    if "u" in cad or "U" in cad:
+    if ("u" in cad) or ("U" in cad):
         bu = True
 
     # Si todas las vocales están presentes, agregar cadena a la lista
@@ -46,8 +47,8 @@ def minusculas(c1):
     # Si todos los caracteres después del primero son minúsculas
     # If all characters after the first are lowercase
     if cm == len(c1) - 1:
-        print(f"La cadena son minusculas exepto la primera{cm}")
-        vocales(cm)  # Llamar a función de verificación de vocales / Call vowel check function
+        print(f"La cadena son minusculas exepto la primera {cm}")
+        vocales(c1)  # Llamar a función de verificación de vocales / Call vowel check function
     else:
         print("Error la cadena no cumple")
 
